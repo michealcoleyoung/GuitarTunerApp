@@ -8,7 +8,11 @@ function playNote(id) {
     }
 }
 
-
+function dropD() {
+	var note = document.getElementById('E');
+		note.src = "Audio/tunings/Standard/Standard D.wav";
+		note.load()
+}
 
 function changeTuning() {
 	var val = document.getElementById('tunings').value;
@@ -23,6 +27,7 @@ function changeTuning() {
 		document.getElementById('note6').innerHTML = "E";
 	// drop D tuning
 	} else if (val == 'dropD') {
+		dropD()
 		document.getElementById('note1').innerHTML = "D";
 		document.getElementById('note2').innerHTML = "A";
 		document.getElementById('note3').innerHTML = "D";

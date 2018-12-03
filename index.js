@@ -72,6 +72,7 @@ class Tunings {
 var tunings = new Tunings() // creates instance of the class
 
 function playNote(id) {
+	// play and pause
 	var audio = document.getElementById(id);
     if (audio.paused == true) {
         audio.play();

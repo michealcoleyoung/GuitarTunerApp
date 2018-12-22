@@ -82,7 +82,7 @@ var tunings = new Tunings() // creates instance of the class
 
 function playNote(id) {
 	// play and pause
-	// changes color of button when it's active
+	// shows active notes being played
 	var audio = document.getElementById(id);
     if (audio.paused == true) {
     	var notes = document.getElementsByClassName('notes');

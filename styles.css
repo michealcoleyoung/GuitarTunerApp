@@ -4,7 +4,6 @@ html, body {
 	background-position: center;
 }
 
-
 .notes {
 	background-color:#000000;
 	border:4px solid orange;
@@ -25,7 +24,6 @@ html, body {
 	top:1px;
 }
 
-
 h1 {
 	color: white;
-}	
+}

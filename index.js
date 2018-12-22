@@ -1,6 +1,6 @@
-class Tunings {
-	// Once a tuning is selected from the drop down menu
-	// each method here will switch out the corresponding audio for that tuning 
+// Once a tuning is selected from the drop down menu
+// each method here will switch out the corresponding audio for that tuning
+class Tunings { 
 	standard() {
 		var note1 = document.getElementById('E');
 		var note2 = document.getElementById('A');
@@ -67,6 +67,14 @@ class Tunings {
 			note5.load()
 			note6.load()
 	}
+	// If note is being played while someone selects a new tuning
+	// this function will clear the active note or notes being played
+	clearNotesPlayed() {
+		var notes = document.getElementsByClassName('notes');
+		for(var note = 0; note < notes.length; note++) {
+			notes[note].style.border = '4px solid orange';
+		}
+	}
 }
 
 var tunings = new Tunings() // creates instance of the class
@@ -78,14 +86,20 @@ function playNote(id) {
     if (audio.paused == true) {
     	var notes = document.getElementsByClassName('notes');
     	for(var note = 0; note < notes.length; note++) {
-    		console.log(notes[note].style.border = '4px solid red');
+    		notes[note].style.border = '4px solid red';
     		console.log(document.activeElement.tagName)
     	}
         audio.play();
  
     }else{
+    	var notes = document.getElementsByClassName('notes');
+    	for(var note = 0; note < notes.length; note++) {
+    		notes[note].style.border = '4px solid orange';
+    		console.log(document.activeElement.tagName)
+    	}
         audio.pause();
         audio.currentTime = 0
+
     }
 }
 
@@ -95,7 +109,8 @@ function changeTuning() {
 	var val = document.getElementById('tunings').value;
 	// stanard tuning	
 	if (val == 'standard') {
-		tunings.standard()
+		tunings.standard();
+		tunings.clearNotesPlayed();
 		document.getElementById('note1').innerHTML = "E";
 		document.getElementById('note2').innerHTML = "A";
 		document.getElementById('note3').innerHTML = "D";
@@ -104,7 +119,8 @@ function changeTuning() {
 		document.getElementById('note6').innerHTML = "E";
 	// drop D tuning
 	} else if (val == 'dropD') {
-		tunings.dropD()
+		tunings.dropD();
+		tunings.clearNotesPlayed();
 		document.getElementById('note1').innerHTML = "D";
 		document.getElementById('note2').innerHTML = "A";
 		document.getElementById('note3').innerHTML = "D";
@@ -113,7 +129,8 @@ function changeTuning() {
 		document.getElementById('note6').innerHTML = "E";
 	// open C tuning
 	} else if (val == 'openC') {
-		tunings.openC()
+		tunings.openC();
+		tunings.clearNotesPlayed();
 		document.getElementById('note1').innerHTML = "C";
 		document.getElementById('note2').innerHTML = "G";
 		document.getElementById('note3').innerHTML = "C";

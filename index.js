@@ -79,7 +79,27 @@ class Tunings {
 
 var tunings = new Tunings() // creates instance of the class
 
+function showNote(id) {
+	var element = document.getElementById(id);
+	element.classList.toggle('notePlayed')
+}
 
+function playNote(id) {
+	// play and pause
+	var audio = document.getElementById(id);
+    if (audio.paused == true) {
+        audio.play();
+ 
+    }else{
+    	var notes = document.getElementsByClassName('notes');
+        audio.pause();
+        audio.currentTime = 0
+
+    }
+}
+
+
+/*
 function playNote(id) {
 	// play and pause
 	// shows active notes being played
@@ -103,7 +123,7 @@ function playNote(id) {
 
     }
 }
-
+*/
 
 function changeTuning() {
 	// Changes the letters of each button according to what tuning is selected

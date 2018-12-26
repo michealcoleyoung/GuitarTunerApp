@@ -81,7 +81,7 @@ var tunings = new Tunings() // creates instance of the class
 
 function showNote(id) {
 	var element = document.getElementById(id);
-	element.classList.toggle('notePlayed')
+	element.classList.toggle('notePlayed');
 }
 
 function playNote(id) {
@@ -91,10 +91,8 @@ function playNote(id) {
         audio.play();
  
     }else{
-    	var notes = document.getElementsByClassName('notes');
         audio.pause();
         audio.currentTime = 0
-
     }
 }
 

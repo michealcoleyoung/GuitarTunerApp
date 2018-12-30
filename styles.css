@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 html, body {
-	background-color: #00ffcd;
+	background-color: #91a3b5;
 	height: 100%;
 	background-position: center;
 }
@@ -22,7 +24,7 @@ html, body {
 .notePlayed {
 	/* takes care of inline styling issue*/
 	background-color:#000000;
-	border:4px solid green !important;
+	border:4px solid green;
 	border-radius: 17px;
 	display:inline-block;
 	cursor:pointer;

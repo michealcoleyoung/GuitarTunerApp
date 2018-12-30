@@ -41,8 +41,8 @@
 
 <div class="row align-items-center h-100">
 <div class="col-8 mx-auto">
-<div class="jumbotron text-center bg-dark">
-<h1 class="display-4">Guitar Tuner</h1>
+<div class="jumbotron text-center bg-dark" style="border: 4px solid black;">
+<h1 class="display-4" style="font-family: 'Pacifico', cursive; font-size: 80px; color: #fffff0;">Guitar Tuner</h1>
 <br>
 
 
@@ -58,7 +58,7 @@
 <div class="form-group"><br>
 
 
-<select class="form-control text-center" id="tunings" onchange="changeTuning();">
+<select class="form-control text-center" id="tunings" onchange="changeTuning(); showNote()">
 
 <option value="standard">Standard Tuning</option>
 <option value="dropD">Drop D</option>

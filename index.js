@@ -125,7 +125,7 @@ function playNote(id) {
 
 function changeTuning() {
 	// Changes the letters of each button according to what tuning is selected
-	
+
 	var val = document.getElementById('tunings').value;
 	// stanard tuning	
 	if (val == 'standard') {

@@ -31,12 +31,12 @@ class Tunings {
 		var note5 = document.getElementById('B');
 		var note6 = document.getElementById('E-1');
 
-			note1.src = "Audio/tunings/Standard/Standard D.wav";
-			note2.src = "Audio/tunings/Standard/Standard A.wav";
-			note3.src = "Audio/tunings/Standard/Standard D.wav";
-			note4.src = "Audio/tunings/Standard/Standard E-1.wav";
-			note5.src = "Audio/tunings/Standard/Standard G.wav";
-			note6.src = "Audio/tunings/Standard/Standard B.wav";
+			note1.src = "Audio/tunings/Drop D/Drop D (Low D).wav";
+			note2.src = "Audio/tunings/Drop D/Drop D A.wav";
+			note3.src = "Audio/tunings/Drop D/Drop D D.wav";
+			note4.src = "Audio/tunings/Drop D/Drop D G.wav";
+			note5.src = "Audio/tunings/Drop D/Drop D B.wav";
+			note6.src = "Audio/tunings/Drop D/Drop D E-1.wav";
 
 			note1.load()
 			note2.load()

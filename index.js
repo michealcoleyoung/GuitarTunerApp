@@ -72,7 +72,9 @@ class Tunings {
 	clearNotesPlayed() {
 		var notes = document.getElementsByClassName('notes');
 		for(var note = 0; note < notes.length; note++) {
-			notes[note].style.border = '4px solid orange';
+			if(notes[note].classList.contains('notePlayed')) {
+				notes[note].classList.toggle('notePlayed');
+			}
 		}
 	}
 }

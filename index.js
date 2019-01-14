@@ -1,5 +1,6 @@
 // Once a tuning is selected from the drop down menu
 // each method here will switch out the corresponding audio for that tuning
+// TO DO: ORGANIZE AUDIO FILES!
 class Tunings { 
 	standard() {
 		var note1 = document.getElementById('E');

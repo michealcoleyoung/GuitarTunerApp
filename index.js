@@ -53,12 +53,12 @@ class Tunings {
 		var note5 = document.getElementById('B');
 		var note6 = document.getElementById('E-1');
 
-			note1.src = "Audio/tunings/Standard/Open_C_6.wav";
-			note2.src = "Audio/tunings/Standard/Open_C_5.wav";
-			note3.src = "Audio/tunings/Standard/Open_C_4.wav";
-			note4.src = "Audio/tunings/Standard/Open_C_3.wav";
-			note5.src = "Audio/tunings/Standard/Open_C_2.wav";
-			note6.src = "Audio/tunings/Standard/Open_C_1.wav";
+			note1.src = "Audio/tunings/Open C/Open_C_6.wav";
+			note2.src = "Audio/tunings/Open C/Open_C_5.wav";
+			note3.src = "Audio/tunings/Open C/Open_C_4.wav";
+			note4.src = "Audio/tunings/Open C/Open_C_3.wav";
+			note5.src = "Audio/tunings/Open C/Open_C_2.wav";
+			note6.src = "Audio/tunings/Open C/Open_C_1.wav";
 
 			note1.load()
 			note2.load()

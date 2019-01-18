@@ -1,6 +1,5 @@
 // Once a tuning is selected from the drop down menu
 // each method here will switch out the corresponding audio for that tuning
-// TO DO: ORGANIZE AUDIO FILES AND ADD OPEN C TUNING!
 class Tunings { 
 	standard() {
 		var note1 = document.getElementById('E');
@@ -10,12 +9,12 @@ class Tunings {
 		var note5 = document.getElementById('B');
 		var note6 = document.getElementById('E-1');
 
-			note1.src = "Audio/tunings/Standard/Standard E.wav";
-			note2.src = "Audio/tunings/Standard/Standard A.wav";
-			note3.src = "Audio/tunings/Standard/Standard D.wav";
-			note4.src = "Audio/tunings/Standard/Standard G.wav";
-			note5.src = "Audio/tunings/Standard/Standard B.wav";
-			note6.src = "Audio/tunings/Standard/Standard E-1.wav";
+			note1.src = "Audio/tunings/Standard/Standard_6.wav";
+			note2.src = "Audio/tunings/Standard/Standard_5.wav";
+			note3.src = "Audio/tunings/Standard/Standard_4.wav";
+			note4.src = "Audio/tunings/Standard/Standard_3.wav";
+			note5.src = "Audio/tunings/Standard/Standard_2.wav";
+			note6.src = "Audio/tunings/Standard/Standard_1.wav";
 
 			note1.load()
 			note2.load()
@@ -32,12 +31,12 @@ class Tunings {
 		var note5 = document.getElementById('B');
 		var note6 = document.getElementById('E-1');
 
-			note1.src = "Audio/tunings/Drop D/Drop D (Low D).wav";
-			note2.src = "Audio/tunings/Drop D/Drop D A.wav";
-			note3.src = "Audio/tunings/Drop D/Drop D D.wav";
-			note4.src = "Audio/tunings/Drop D/Drop D G.wav";
-			note5.src = "Audio/tunings/Drop D/Drop D B.wav";
-			note6.src = "Audio/tunings/Drop D/Drop D E-1.wav";
+			note1.src = "Audio/tunings/Drop D/Drop_D_6.wav";
+			note2.src = "Audio/tunings/Drop D/Drop_D_5.wav";
+			note3.src = "Audio/tunings/Drop D/Drop_D_4.wav";
+			note4.src = "Audio/tunings/Drop D/Drop_D_3.wav";
+			note5.src = "Audio/tunings/Drop D/Drop_D_2.wav";
+			note6.src = "Audio/tunings/Drop D/Drop_D_1.wav";
 
 			note1.load()
 			note2.load()
@@ -54,12 +53,12 @@ class Tunings {
 		var note5 = document.getElementById('B');
 		var note6 = document.getElementById('E-1');
 
-			note1.src = "Audio/tunings/Standard/Standard D.wav";
-			note2.src = "Audio/tunings/Standard/Standard D.wav";
-			note3.src = "Audio/tunings/Standard/Standard D.wav";
-			note4.src = "Audio/tunings/Standard/Standard D.wav";
-			note5.src = "Audio/tunings/Standard/Standard D.wav";
-			note6.src = "Audio/tunings/Standard/Standard E-1.wav";
+			note1.src = "Audio/tunings/Standard/Open_C_6.wav";
+			note2.src = "Audio/tunings/Standard/Open_C_5.wav";
+			note3.src = "Audio/tunings/Standard/Open_C_4.wav";
+			note4.src = "Audio/tunings/Standard/Open_C_3.wav";
+			note5.src = "Audio/tunings/Standard/Open_C_2.wav";
+			note6.src = "Audio/tunings/Standard/Open_C_1.wav";
 
 			note1.load()
 			note2.load()
@@ -98,33 +97,6 @@ function playNote(id) {
         audio.currentTime = 0
     }
 }
-
-
-/*
-function playNote(id) {
-	// play and pause
-	// shows active notes being played
-	var audio = document.getElementById(id);
-    if (audio.paused == true) {
-    	var notes = document.getElementsByClassName('notes');
-    	for(var note = 0; note < notes.length; note++) {
-    		notes[note].style.border = '4px solid red';
-    		console.log(document.activeElement.tagName)
-    	}
-        audio.play();
- 
-    }else{
-    	var notes = document.getElementsByClassName('notes');
-    	for(var note = 0; note < notes.length; note++) {
-    		notes[note].style.border = '4px solid orange';
-    		console.log(document.activeElement.tagName)
-    	}
-        audio.pause();
-        audio.currentTime = 0
-
-    }
-}
-*/
 
 function changeTuning() {
 	// Changes the letters of each button according to what tuning is selected
